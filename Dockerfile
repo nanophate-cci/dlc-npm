@@ -3,7 +3,7 @@ FROM node:12
 
 WORKDIR /app
 
-RUN apk add --no-cache python3 py3-pip
+RUN apt-get update && apt-get install -y software-package
 
 COPY package*.json ./
 
